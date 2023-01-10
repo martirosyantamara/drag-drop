@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  display: grid;
+}
+
+.row {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  overflow: visible;
+}
+
+.col-header {
+  grid-row: 1;
+  height: auto;
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  color: #5e6c84;
+  background: #f4f5f7;
+}
+
+.item {
+  width: 120px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 0.8rem 1rem;
+  color: #172b4d;
+  cursor: grab;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.grabber {
+  width: 3px;
+  left: 5px;
+  top: 5px;
+  bottom: 5px;
+  height: auto;
+  position: absolute;
+}
+
+.grabber.bug {
+  background-color: #ff0000;
+}
+
+.grabber.task {
+  background-color: #009900;
+}
+
+.item:hover {
+  background: #ebecf0;
+}
+
+.item:active {
+  cursor: grabbing;
+  background: #dbebf8;
+}
+
+.placeholder {
+  width: 150px;
+  height: 150px;
+  background: #f4f5f7;
+  padding: 1rem;
+}
+
+.hold {
+  background: #dbebf8;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border: 2px dashed #3b56dc;
+}

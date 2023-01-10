@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drag & Drop</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-header">To Do</div>
+      <div class="col-header">In Progress</div>
+      <div class="col-header">In Review</div>
+      <div class="col-header">Ready To Merge</div>
+    </div>
+
+    <div class="row">
+      <div class="placeholder">
+        <div class="item" draggable="true">
+          <span>Bug</span>
+          <div class="grabber bug"></div>
+        </div>
+        <div class="item" draggable="true">
+          <span>Task</span>
+          <div class="grabber task"></div>
+        </div>
+      </div>
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
